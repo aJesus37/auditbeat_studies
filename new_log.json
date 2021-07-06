@@ -1,7 +1,515 @@
-{"@timestamp":"2021-07-06T18:45:13.492Z","@metadata":{"beat":"auditbeat","type":"_doc","version":"7.13.2"},"process":{"args":["apt","install","curl","netcat"],"pid":2583,"ppid":2262,"working_directory":"/","executable":"/usr/bin/apt","start":"2021-07-06T18:45:08.490Z","entity_id":"GIV+I39cRn208iQf","name":"apt"},"host":{"ip":["172.16.0.131","fe80::e114:1433:f3aa:41ca","172.17.0.1","fe80::42:3ff:feaf:df0b","fe80::20:f5ff:fe83:3dd6"],"name":"localhost.localdomain","mac":["00:0c:29:4a:6c:3b","02:42:03:af:df:0b","02:20:f5:83:3d:d6"],"hostname":"localhost.localdomain","architecture":"x86_64","os":{"family":"redhat","name":"CentOS Linux","kernel":"3.10.0-1160.el7.x86_64","codename":"Core","type":"linux","platform":"centos","version":"7 (Core)"},"id":"25f6e9269938405f88cd0ec3c92e1f13","containerized":false},"agent":{"id":"04306ad1-6b93-450c-ae3c-25dc2804b90d","name":"localhost.localdomain","type":"auditbeat","version":"7.13.2","hostname":"localhost.localdomain","ephemeral_id":"e6ccf233-da41-45bb-b398-5d9a22ed6886"},"container":{"id":"75668ccbe74fe64d73ff966f8e31bfa9093eb58c525738166d359d8b80b86aae","image":{"name":"debian"},"name":"amazing_perlman"},"event":{"action":"process_error","module":"system","dataset":"process","kind":"error","category":["process"],"type":["info"]},"message":"ERROR for PID 2583: failed to hash executable /usr/bin/apt for PID 2583: failed to stat file /usr/bin/apt: stat /usr/bin/apt: no such file or directory","user":{"saved":{"id":"0","group":{"id":"0"}},"name":"root","id":"0","group":{"id":"0","name":"root"},"effective":{"id":"0","group":{"id":"0"}}},"error":{"message":"failed to hash executable /usr/bin/apt for PID 2583: failed to stat file /usr/bin/apt: stat /usr/bin/apt: no such file or directory"},"service":{"type":"system"},"ecs":{"version":"1.9.0"}}
-
-{"@timestamp":"2021-07-06T18:46:43.492Z","@metadata":{"beat":"auditbeat","type":"_doc","version":"7.13.2"},"user":{"group":{"id":"0","name":"root"},"effective":{"id":"0","group":{"id":"0"}},"saved":{"group":{"id":"0"},"id":"0"},"name":"root","id":"0"},"error":{"message":"failed to hash executable /bin/nc.traditional for PID 5255: failed to stat file /bin/nc.traditional: stat /bin/nc.traditional: no such file or directory"},"ecs":{"version":"1.9.0"},"agent":{"version":"7.13.2","hostname":"localhost.localdomain","ephemeral_id":"e6ccf233-da41-45bb-b398-5d9a22ed6886","id":"04306ad1-6b93-450c-ae3c-25dc2804b90d","name":"localhost.localdomain","type":"auditbeat"},"container":{"id":"75668ccbe74fe64d73ff966f8e31bfa9093eb58c525738166d359d8b80b86aae","image":{"name":"debian"},"name":"amazing_perlman"},"service":{"type":"system"},"message":"ERROR for PID 5255: failed to hash executable /bin/nc.traditional for PID 5255: failed to stat file /bin/nc.traditional: stat /bin/nc.traditional: no such file or directory","host":{"name":"localhost.localdomain","mac":["00:0c:29:4a:6c:3b","02:42:03:af:df:0b","02:20:f5:83:3d:d6"],"hostname":"localhost.localdomain","architecture":"x86_64","os":{"version":"7 (Core)","family":"redhat","name":"CentOS Linux","kernel":"3.10.0-1160.el7.x86_64","codename":"Core","type":"linux","platform":"centos"},"id":"25f6e9269938405f88cd0ec3c92e1f13","containerized":false,"ip":["172.16.0.131","fe80::e114:1433:f3aa:41ca","172.17.0.1","fe80::42:3ff:feaf:df0b","fe80::20:f5ff:fe83:3dd6"]},"event":{"category":["process"],"type":["info"],"action":"process_error","module":"system","dataset":"process","kind":"error"},"process":{"name":"netcat","args":["netcat","pudim.com.br","80"],"pid":5255,"ppid":2262,"working_directory":"/","executable":"/bin/nc.traditional","start":"2021-07-06T18:46:39.310Z","entity_id":"uTbpHan/3vsjLJEG"}}
-
-{"@timestamp":"2021-07-06T18:46:45.283Z","@metadata":{"beat":"auditbeat","type":"_doc","version":"7.13.2"},"flow":{"complete":false,"final":true},"group":{"id":"0","name":"root"},"source":{"ip":"172.17.0.2","port":52005,"packets":1,"bytes":58},"related":{"user":["root"],"ip":["172.17.0.2","172.16.0.2"]},"agent":{"hostname":"localhost.localdomain","ephemeral_id":"e6ccf233-da41-45bb-b398-5d9a22ed6886","id":"04306ad1-6b93-450c-ae3c-25dc2804b90d","name":"localhost.localdomain","type":"auditbeat","version":"7.13.2"},"container":{"id":"75668ccbe74fe64d73ff966f8e31bfa9093eb58c525738166d359d8b80b86aae","name":"amazing_perlman","image":{"name":"debian"}},"client":{"port":52005,"packets":1,"bytes":58,"ip":"172.17.0.2"},"system":{"audit":{"socket":{"uid":0,"gid":0,"euid":0,"egid":0,"kernel_sock_address":"0xffff9bb02ca5c840"}}},"server":{"port":53,"packets":1,"bytes":82,"ip":"172.16.0.2"},"host":{"mac":["00:0c:29:4a:6c:3b","02:42:03:af:df:0b","02:20:f5:83:3d:d6"],"hostname":"localhost.localdomain","architecture":"x86_64","os":{"codename":"Core","type":"linux","platform":"centos","version":"7 (Core)","family":"redhat","name":"CentOS Linux","kernel":"3.10.0-1160.el7.x86_64"},"id":"25f6e9269938405f88cd0ec3c92e1f13","containerized":false,"name":"localhost.localdomain","ip":["172.16.0.131","fe80::e114:1433:f3aa:41ca","172.17.0.1","fe80::42:3ff:feaf:df0b","fe80::20:f5ff:fe83:3dd6"]},"service":{"type":"system"},"network":{"transport":"udp","packets":2,"bytes":140,"community_id":"1:pr3MfU9DA+7V4aHr5YLxv0J1Sm8=","direction":"egress","type":"ipv4"},"event":{"dataset":"socket","category":["network","network_traffic"],"type":["info","connection"],"end":"2021-07-06T18:46:40.165Z","module":"system","kind":"event","action":"network_flow","start":"2021-07-06T18:46:40.163Z","duration":1960090},"destination":{"ip":"172.16.0.2","port":53,"packets":1,"bytes":82},"process":{"pid":5255,"name":"netcat","args":["netcat","pudim.com.br","80"],"executable":"/bin/netcat","created":"2021-07-06T18:46:40.158Z"},"ecs":{"version":"1.9.0"},"user":{"id":"0","name":"root"}}
-
-{"@timestamp":"2021-07-06T18:46:52.283Z","@metadata":{"beat":"auditbeat","type":"_doc","version":"7.13.2"},"client":{"ip":"172.17.0.2","port":48426,"packets":4,"bytes":195},"user":{"id":"0","name":"root"},"group":{"name":"root","id":"0"},"process":{"pid":5255,"name":"netcat","args":["netcat","pudim.com.br","80"],"executable":"/bin/netcat","created":"2021-07-06T18:46:40.158Z"},"agent":{"name":"localhost.localdomain","type":"auditbeat","version":"7.13.2","hostname":"localhost.localdomain","ephemeral_id":"e6ccf233-da41-45bb-b398-5d9a22ed6886","id":"04306ad1-6b93-450c-ae3c-25dc2804b90d"},"host":{"architecture":"x86_64","os":{"name":"CentOS Linux","kernel":"3.10.0-1160.el7.x86_64","codename":"Core","type":"linux","platform":"centos","version":"7 (Core)","family":"redhat"},"id":"25f6e9269938405f88cd0ec3c92e1f13","name":"localhost.localdomain","containerized":false,"ip":["172.16.0.131","fe80::e114:1433:f3aa:41ca","172.17.0.1","fe80::42:3ff:feaf:df0b","fe80::20:f5ff:fe83:3dd6"],"mac":["00:0c:29:4a:6c:3b","02:42:03:af:df:0b","02:20:f5:83:3d:d6"],"hostname":"localhost.localdomain"},"network":{"community_id":"1:s2CVq8UJcQcB2CLLkPPGL0IIjmw=","direction":"egress","type":"ipv4","transport":"tcp","packets":8,"bytes":718},"system":{"audit":{"socket":{"gid":0,"euid":0,"egid":0,"kernel_sock_address":"0xffff9bb02f947440","uid":0}}},"ecs":{"version":"1.9.0"},"destination":{"ip":"54.207.20.104","port":80,"packets":4,"bytes":523,"domain":"pudim.com.br"},"event":{"dataset":"socket","end":"2021-07-06T18:46:46.416Z","module":"system","action":"network_flow","category":["network","network_traffic"],"type":["info","connection"],"start":"2021-07-06T18:46:40.168Z","kind":"event","duration":6248888346},"flow":{"complete":true,"final":true},"related":{"ip":["172.17.0.2","54.207.20.104"],"user":["root"]},"server":{"packets":4,"bytes":523,"domain":"pudim.com.br","ip":"54.207.20.104","port":80},"service":{"type":"system"},"container":{"id":"75668ccbe74fe64d73ff966f8e31bfa9093eb58c525738166d359d8b80b86aae","name":"amazing_perlman","image":{"name":"debian"}},"source":{"ip":"172.17.0.2","port":48426,"packets":4,"bytes":195}}
+{
+  "@timestamp": "2021-07-06T18:45:13.492Z",
+  "@metadata": {
+    "beat": "auditbeat",
+    "type": "_doc",
+    "version": "7.13.2"
+  },
+  "process": {
+    "args": [
+      "apt",
+      "install",
+      "curl",
+      "netcat"
+    ],
+    "pid": 2583,
+    "ppid": 2262,
+    "working_directory": "/",
+    "executable": "/usr/bin/apt",
+    "start": "2021-07-06T18:45:08.490Z",
+    "entity_id": "GIV+I39cRn208iQf",
+    "name": "apt"
+  },
+  "host": {
+    "ip": [
+      "172.16.0.131",
+      "fe80::e114:1433:f3aa:41ca",
+      "172.17.0.1",
+      "fe80::42:3ff:feaf:df0b",
+      "fe80::20:f5ff:fe83:3dd6"
+    ],
+    "name": "localhost.localdomain",
+    "mac": [
+      "00:0c:29:4a:6c:3b",
+      "02:42:03:af:df:0b",
+      "02:20:f5:83:3d:d6"
+    ],
+    "hostname": "localhost.localdomain",
+    "architecture": "x86_64",
+    "os": {
+      "family": "redhat",
+      "name": "CentOS Linux",
+      "kernel": "3.10.0-1160.el7.x86_64",
+      "codename": "Core",
+      "type": "linux",
+      "platform": "centos",
+      "version": "7 (Core)"
+    },
+    "id": "25f6e9269938405f88cd0ec3c92e1f13",
+    "containerized": false
+  },
+  "agent": {
+    "id": "04306ad1-6b93-450c-ae3c-25dc2804b90d",
+    "name": "localhost.localdomain",
+    "type": "auditbeat",
+    "version": "7.13.2",
+    "hostname": "localhost.localdomain",
+    "ephemeral_id": "e6ccf233-da41-45bb-b398-5d9a22ed6886"
+  },
+  "container": {
+    "id": "75668ccbe74fe64d73ff966f8e31bfa9093eb58c525738166d359d8b80b86aae",
+    "image": {
+      "name": "debian"
+    },
+    "name": "amazing_perlman"
+  },
+  "event": {
+    "action": "process_error",
+    "module": "system",
+    "dataset": "process",
+    "kind": "error",
+    "category": [
+      "process"
+    ],
+    "type": [
+      "info"
+    ]
+  },
+  "message": "ERROR for PID 2583: failed to hash executable /usr/bin/apt for PID 2583: failed to stat file /usr/bin/apt: stat /usr/bin/apt: no such file or directory",
+  "user": {
+    "saved": {
+      "id": "0",
+      "group": {
+        "id": "0"
+      }
+    },
+    "name": "root",
+    "id": "0",
+    "group": {
+      "id": "0",
+      "name": "root"
+    },
+    "effective": {
+      "id": "0",
+      "group": {
+        "id": "0"
+      }
+    }
+  },
+  "error": {
+    "message": "failed to hash executable /usr/bin/apt for PID 2583: failed to stat file /usr/bin/apt: stat /usr/bin/apt: no such file or directory"
+  },
+  "service": {
+    "type": "system"
+  },
+  "ecs": {
+    "version": "1.9.0"
+  }
+}
+{
+  "@timestamp": "2021-07-06T18:46:43.492Z",
+  "@metadata": {
+    "beat": "auditbeat",
+    "type": "_doc",
+    "version": "7.13.2"
+  },
+  "user": {
+    "group": {
+      "id": "0",
+      "name": "root"
+    },
+    "effective": {
+      "id": "0",
+      "group": {
+        "id": "0"
+      }
+    },
+    "saved": {
+      "group": {
+        "id": "0"
+      },
+      "id": "0"
+    },
+    "name": "root",
+    "id": "0"
+  },
+  "error": {
+    "message": "failed to hash executable /bin/nc.traditional for PID 5255: failed to stat file /bin/nc.traditional: stat /bin/nc.traditional: no such file or directory"
+  },
+  "ecs": {
+    "version": "1.9.0"
+  },
+  "agent": {
+    "version": "7.13.2",
+    "hostname": "localhost.localdomain",
+    "ephemeral_id": "e6ccf233-da41-45bb-b398-5d9a22ed6886",
+    "id": "04306ad1-6b93-450c-ae3c-25dc2804b90d",
+    "name": "localhost.localdomain",
+    "type": "auditbeat"
+  },
+  "container": {
+    "id": "75668ccbe74fe64d73ff966f8e31bfa9093eb58c525738166d359d8b80b86aae",
+    "image": {
+      "name": "debian"
+    },
+    "name": "amazing_perlman"
+  },
+  "service": {
+    "type": "system"
+  },
+  "message": "ERROR for PID 5255: failed to hash executable /bin/nc.traditional for PID 5255: failed to stat file /bin/nc.traditional: stat /bin/nc.traditional: no such file or directory",
+  "host": {
+    "name": "localhost.localdomain",
+    "mac": [
+      "00:0c:29:4a:6c:3b",
+      "02:42:03:af:df:0b",
+      "02:20:f5:83:3d:d6"
+    ],
+    "hostname": "localhost.localdomain",
+    "architecture": "x86_64",
+    "os": {
+      "version": "7 (Core)",
+      "family": "redhat",
+      "name": "CentOS Linux",
+      "kernel": "3.10.0-1160.el7.x86_64",
+      "codename": "Core",
+      "type": "linux",
+      "platform": "centos"
+    },
+    "id": "25f6e9269938405f88cd0ec3c92e1f13",
+    "containerized": false,
+    "ip": [
+      "172.16.0.131",
+      "fe80::e114:1433:f3aa:41ca",
+      "172.17.0.1",
+      "fe80::42:3ff:feaf:df0b",
+      "fe80::20:f5ff:fe83:3dd6"
+    ]
+  },
+  "event": {
+    "category": [
+      "process"
+    ],
+    "type": [
+      "info"
+    ],
+    "action": "process_error",
+    "module": "system",
+    "dataset": "process",
+    "kind": "error"
+  },
+  "process": {
+    "name": "netcat",
+    "args": [
+      "netcat",
+      "pudim.com.br",
+      "80"
+    ],
+    "pid": 5255,
+    "ppid": 2262,
+    "working_directory": "/",
+    "executable": "/bin/nc.traditional",
+    "start": "2021-07-06T18:46:39.310Z",
+    "entity_id": "uTbpHan/3vsjLJEG"
+  }
+}
+{
+  "@timestamp": "2021-07-06T18:46:45.283Z",
+  "@metadata": {
+    "beat": "auditbeat",
+    "type": "_doc",
+    "version": "7.13.2"
+  },
+  "flow": {
+    "complete": false,
+    "final": true
+  },
+  "group": {
+    "id": "0",
+    "name": "root"
+  },
+  "source": {
+    "ip": "172.17.0.2",
+    "port": 52005,
+    "packets": 1,
+    "bytes": 58
+  },
+  "related": {
+    "user": [
+      "root"
+    ],
+    "ip": [
+      "172.17.0.2",
+      "172.16.0.2"
+    ]
+  },
+  "agent": {
+    "hostname": "localhost.localdomain",
+    "ephemeral_id": "e6ccf233-da41-45bb-b398-5d9a22ed6886",
+    "id": "04306ad1-6b93-450c-ae3c-25dc2804b90d",
+    "name": "localhost.localdomain",
+    "type": "auditbeat",
+    "version": "7.13.2"
+  },
+  "container": {
+    "id": "75668ccbe74fe64d73ff966f8e31bfa9093eb58c525738166d359d8b80b86aae",
+    "name": "amazing_perlman",
+    "image": {
+      "name": "debian"
+    }
+  },
+  "client": {
+    "port": 52005,
+    "packets": 1,
+    "bytes": 58,
+    "ip": "172.17.0.2"
+  },
+  "system": {
+    "audit": {
+      "socket": {
+        "uid": 0,
+        "gid": 0,
+        "euid": 0,
+        "egid": 0,
+        "kernel_sock_address": "0xffff9bb02ca5c840"
+      }
+    }
+  },
+  "server": {
+    "port": 53,
+    "packets": 1,
+    "bytes": 82,
+    "ip": "172.16.0.2"
+  },
+  "host": {
+    "mac": [
+      "00:0c:29:4a:6c:3b",
+      "02:42:03:af:df:0b",
+      "02:20:f5:83:3d:d6"
+    ],
+    "hostname": "localhost.localdomain",
+    "architecture": "x86_64",
+    "os": {
+      "codename": "Core",
+      "type": "linux",
+      "platform": "centos",
+      "version": "7 (Core)",
+      "family": "redhat",
+      "name": "CentOS Linux",
+      "kernel": "3.10.0-1160.el7.x86_64"
+    },
+    "id": "25f6e9269938405f88cd0ec3c92e1f13",
+    "containerized": false,
+    "name": "localhost.localdomain",
+    "ip": [
+      "172.16.0.131",
+      "fe80::e114:1433:f3aa:41ca",
+      "172.17.0.1",
+      "fe80::42:3ff:feaf:df0b",
+      "fe80::20:f5ff:fe83:3dd6"
+    ]
+  },
+  "service": {
+    "type": "system"
+  },
+  "network": {
+    "transport": "udp",
+    "packets": 2,
+    "bytes": 140,
+    "community_id": "1:pr3MfU9DA+7V4aHr5YLxv0J1Sm8=",
+    "direction": "egress",
+    "type": "ipv4"
+  },
+  "event": {
+    "dataset": "socket",
+    "category": [
+      "network",
+      "network_traffic"
+    ],
+    "type": [
+      "info",
+      "connection"
+    ],
+    "end": "2021-07-06T18:46:40.165Z",
+    "module": "system",
+    "kind": "event",
+    "action": "network_flow",
+    "start": "2021-07-06T18:46:40.163Z",
+    "duration": 1960090
+  },
+  "destination": {
+    "ip": "172.16.0.2",
+    "port": 53,
+    "packets": 1,
+    "bytes": 82
+  },
+  "process": {
+    "pid": 5255,
+    "name": "netcat",
+    "args": [
+      "netcat",
+      "pudim.com.br",
+      "80"
+    ],
+    "executable": "/bin/netcat",
+    "created": "2021-07-06T18:46:40.158Z"
+  },
+  "ecs": {
+    "version": "1.9.0"
+  },
+  "user": {
+    "id": "0",
+    "name": "root"
+  }
+}
+{
+  "@timestamp": "2021-07-06T18:46:52.283Z",
+  "@metadata": {
+    "beat": "auditbeat",
+    "type": "_doc",
+    "version": "7.13.2"
+  },
+  "client": {
+    "ip": "172.17.0.2",
+    "port": 48426,
+    "packets": 4,
+    "bytes": 195
+  },
+  "user": {
+    "id": "0",
+    "name": "root"
+  },
+  "group": {
+    "name": "root",
+    "id": "0"
+  },
+  "process": {
+    "pid": 5255,
+    "name": "netcat",
+    "args": [
+      "netcat",
+      "pudim.com.br",
+      "80"
+    ],
+    "executable": "/bin/netcat",
+    "created": "2021-07-06T18:46:40.158Z"
+  },
+  "agent": {
+    "name": "localhost.localdomain",
+    "type": "auditbeat",
+    "version": "7.13.2",
+    "hostname": "localhost.localdomain",
+    "ephemeral_id": "e6ccf233-da41-45bb-b398-5d9a22ed6886",
+    "id": "04306ad1-6b93-450c-ae3c-25dc2804b90d"
+  },
+  "host": {
+    "architecture": "x86_64",
+    "os": {
+      "name": "CentOS Linux",
+      "kernel": "3.10.0-1160.el7.x86_64",
+      "codename": "Core",
+      "type": "linux",
+      "platform": "centos",
+      "version": "7 (Core)",
+      "family": "redhat"
+    },
+    "id": "25f6e9269938405f88cd0ec3c92e1f13",
+    "name": "localhost.localdomain",
+    "containerized": false,
+    "ip": [
+      "172.16.0.131",
+      "fe80::e114:1433:f3aa:41ca",
+      "172.17.0.1",
+      "fe80::42:3ff:feaf:df0b",
+      "fe80::20:f5ff:fe83:3dd6"
+    ],
+    "mac": [
+      "00:0c:29:4a:6c:3b",
+      "02:42:03:af:df:0b",
+      "02:20:f5:83:3d:d6"
+    ],
+    "hostname": "localhost.localdomain"
+  },
+  "network": {
+    "community_id": "1:s2CVq8UJcQcB2CLLkPPGL0IIjmw=",
+    "direction": "egress",
+    "type": "ipv4",
+    "transport": "tcp",
+    "packets": 8,
+    "bytes": 718
+  },
+  "system": {
+    "audit": {
+      "socket": {
+        "gid": 0,
+        "euid": 0,
+        "egid": 0,
+        "kernel_sock_address": "0xffff9bb02f947440",
+        "uid": 0
+      }
+    }
+  },
+  "ecs": {
+    "version": "1.9.0"
+  },
+  "destination": {
+    "ip": "54.207.20.104",
+    "port": 80,
+    "packets": 4,
+    "bytes": 523,
+    "domain": "pudim.com.br"
+  },
+  "event": {
+    "dataset": "socket",
+    "end": "2021-07-06T18:46:46.416Z",
+    "module": "system",
+    "action": "network_flow",
+    "category": [
+      "network",
+      "network_traffic"
+    ],
+    "type": [
+      "info",
+      "connection"
+    ],
+    "start": "2021-07-06T18:46:40.168Z",
+    "kind": "event",
+    "duration": 6248888346
+  },
+  "flow": {
+    "complete": true,
+    "final": true
+  },
+  "related": {
+    "ip": [
+      "172.17.0.2",
+      "54.207.20.104"
+    ],
+    "user": [
+      "root"
+    ]
+  },
+  "server": {
+    "packets": 4,
+    "bytes": 523,
+    "domain": "pudim.com.br",
+    "ip": "54.207.20.104",
+    "port": 80
+  },
+  "service": {
+    "type": "system"
+  },
+  "container": {
+    "id": "75668ccbe74fe64d73ff966f8e31bfa9093eb58c525738166d359d8b80b86aae",
+    "name": "amazing_perlman",
+    "image": {
+      "name": "debian"
+    }
+  },
+  "source": {
+    "ip": "172.17.0.2",
+    "port": 48426,
+    "packets": 4,
+    "bytes": 195
+  }
+}
